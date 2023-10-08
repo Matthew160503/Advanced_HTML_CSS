@@ -1,0 +1,24 @@
+@mixin flexCenter() {
+    display: flex;
+    justify-content: center;
+}
+
+@mixin flexCenterAlign-items() {
+    display: flex;
+    align-items: center;
+}
+
+@mixin flexSpace-B() {
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin chapter($width) {
+    position: relative;
+    background-position: center;
+    width: $width;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+}

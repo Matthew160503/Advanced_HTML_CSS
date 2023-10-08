@@ -1,0 +1,48 @@
+.top_title {
+    width: 100%;
+    height: 148px;
+    background-color: #F8F3F4;
+    @include flexCenterAlign-items();
+
+    &_b {
+        width: 71.25%;
+        @include flexCenterAlign-items();
+        justify-content: space-between;
+
+        &_title {
+            color: $siteMainColor;
+            font-size: 24px;
+            font-weight: 400;
+        }
+
+        &_breadcrumb {
+            display: flex;
+
+            li {
+                list-style: none;
+            }
+
+            li a {
+                display: inline;
+                color: #636363;
+                font-size: 14px;
+                font-weight: 300;
+            }
+
+            li.dop a {
+                color: $siteMainColor;
+                font-weight: 700;
+            }
+
+            li+li:before {
+                padding: 5px;
+                color: #636363;
+                content: "/\00a0";
+            }
+
+            li a:hover {
+                box-shadow: 3px -3px 1px 1px rgba(9, 9, 12, 0.2);
+            }
+        }
+    }
+}

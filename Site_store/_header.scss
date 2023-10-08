@@ -1,0 +1,29 @@
+.header {
+    background-color: $headerAndFooterColor;
+    height: 75px;
+    @include flexCenter();
+
+    &_block {
+        width: 71.25%;
+        @include flexCenterAlign-items();
+        justify-content: space-between;
+
+        &_left_side {
+            gap: 41px;
+            @include flexCenterAlign-items();
+        }
+
+        &_right_side {
+            gap: 30px;
+            @include flexCenterAlign-items();
+        }
+    }
+}
+
+.t1 {
+    height: 27px;
+}
+
+.hov:hover path {
+    fill: $siteMainColor;
+}

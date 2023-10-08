@@ -1,0 +1,139 @@
+.carousel {
+    background: #F7F7F7;
+    height: 777px;
+}
+
+.d-block {
+    margin: auto;
+}
+
+.w-100 {
+    max-width: 597px;
+}
+
+.box {
+    width: 47px;
+    height: 47px;
+    background: rgba(42, 42, 42, 0.15);
+    @include flexCenterAlign-items();
+    justify-content: center;
+}
+
+.carousel-control-prev-icon {
+    background-image: none;
+}
+
+.carousel-control-next-icon {
+    background-image: none;
+}
+
+.box:hover path {
+    fill: $siteMainColor;
+}
+
+.about_item {
+    max-width: 1141px;
+    height: 601px;
+    background-color: #fff;
+    margin-top: -65px;
+    position: relative;
+    padding: 65px 250px;
+    outline: 1px solid #EAEAEA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 130px;
+}
+
+.prefix {
+    color: #F16D7F;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.item_title {
+    color: #4D4D4D;
+    font-size: 18px;
+    font-weight: 300;
+    padding-top: 27px;
+}
+
+.item_title::before {
+    content: '';
+    width: 63px;
+    height: 3.025px;
+    background-color: $siteMainColor;
+    top: 95px;
+    left: 534px;
+    position: absolute;
+}
+
+.item_description {
+    color: #5E5E5E;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 300;
+    padding-top: 43px;
+}
+
+.item_price {
+    color: #EF5B70;
+    font-size: 24px;
+    font-weight: 300;
+    padding-top: 32px;
+}
+
+.cust::before {
+    content: '';
+    width: 641px;
+    height: 1px;
+    background-color: #EAEAEA;
+    top: 357px;
+    left: 250px;
+    position: absolute;
+}
+
+.cust {
+    padding-top: 110px;
+    @include flexCenter();
+    gap: 23px;
+
+    &_box {
+        display: flex;
+        flex-direction: row;
+        gap: 9px;
+        align-items: center;
+
+        &_subt {
+            color: #6F6E6E;
+            font-size: 14px;
+            font-weight: 400;
+        }
+    }
+}
+
+.adding {
+    padding-top: 48px;
+    padding-bottom: 64px;
+
+    &_items {
+        background-color: #FFF;
+        width: 212px;
+        height: 48px;
+        color: $siteMainColor;
+        border-color: $siteMainColor;
+    }
+
+    &_items:hover {
+        background-color: $siteMainColor;
+        color: #FFF;
+    }
+
+    &_items:hover path {
+        fill: #FFF;
+    }
+}
+
+.f_items {
+    margin-bottom: 128px;
+}
