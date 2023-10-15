@@ -1,29 +1,90 @@
 .header {
     background-color: $headerAndFooterColor;
     height: 75px;
-    @include flexCenter();
 
     &_block {
-        width: 71.25%;
-        @include flexCenterAlign-items();
-        justify-content: space-between;
+        height: 100%;
+        @include flexJustify(space-between);
 
         &_left_side {
-            gap: 41px;
-            @include flexCenterAlign-items();
+            @include flexJustify($gapSize: 41px);
         }
 
         &_right_side {
-            gap: 30px;
-            @include flexCenterAlign-items();
+            @include flexJustify($gapSize: 33px);
         }
     }
 }
 
 .t1 {
-    height: 27px;
+    padding-top: 12px;
 }
 
 .hov:hover path {
     fill: $siteMainColor;
+}
+
+#burger {
+    position: absolute;
+    left: -9999999999px;
+    visibility: hidden;
+}
+
+#burger:checked~.nav {
+    right: -240px;
+}
+
+
+.nav {
+    background: #FFF;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    width: 200px;
+    height: 601px;
+    padding-left: 33px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    z-index: 10000;
+    box-sizing: content-box;
+    position: absolute;
+    top: 77px;
+    right: 0;
+    transition: right 0.3s;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    &_menu {
+        color: #000;
+        font-size: 14px;
+        font-weight: 700;
+        padding-bottom: 24px;
+    }
+
+    &_cat {
+        line-height: normal;
+
+        &_block {
+            &_name {
+                color: #F16D7F;
+                font-size: 14px;
+                font-weight: 400;
+                padding-bottom: 12px;
+            }
+
+            &_list {
+                padding-left: 20px;
+                list-style-type: none;
+                padding-bottom: 20px;
+                display: flex;
+                row-gap: 11px;
+                flex-direction: column;
+
+                &_a {
+                    color: #6F6E6E;
+                    font-size: 14px;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
 }

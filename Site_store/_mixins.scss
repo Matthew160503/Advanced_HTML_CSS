@@ -1,16 +1,8 @@
-@mixin flexCenter() {
+@mixin flexJustify($justifytype: center, $alignItems: center, $gapSize: 0) {
     display: flex;
-    justify-content: center;
-}
-
-@mixin flexCenterAlign-items() {
-    display: flex;
-    align-items: center;
-}
-
-@mixin flexSpace-B() {
-    display: flex;
-    justify-content: space-between;
+    align-items: $alignItems;
+    justify-content: $justifytype;
+    gap: $gapSize;
 }
 
 @mixin chapter($width) {
