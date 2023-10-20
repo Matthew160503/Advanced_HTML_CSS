@@ -1193,4 +1193,143 @@ button {
   background-color: #F16D7F;
   color: #FFF;
   border: none;
+}
+
+.registration {
+  margin-top: 40px;
+  margin-bottom: 96px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.f_box {
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+}
+
+.fields {
+  width: 380px;
+  display: flex;
+  flex-direction: column;
+}
+.fields__names {
+  color: #222;
+  font-size: 16px;
+  font-weight: 300;
+}
+.fields__description {
+  color: #B1B1B1;
+  font-size: 13px;
+  font-weight: 300;
+  margin-top: 15px;
+  margin-bottom: 39px;
+}
+.fields__button {
+  width: 167px;
+  height: 50px;
+  background-color: #F16D7F;
+  border: none;
+  color: #FFF;
+  font-size: 14px;
+  font-weight: 400;
+}
+.fields__button:hover {
+  border: 1px solid #F16D7F;
+  background-color: #FFF;
+  color: #F16D7F;
+}
+.fields__button:hover path {
+  fill: #F16D7F;
+}
+.fields__svg {
+  padding-left: 20px;
+}
+
+.entry-field {
+  width: 360px;
+  height: 44px;
+  color: #B1B1B1;
+  font-size: 13px;
+  font-weight: 300;
+  border: 1px solid #A4A4A4;
+  padding-left: 17px;
+}
+
+.gender {
+  display: flex;
+  gap: 10px;
+}
+
+.gender-input {
+  display: flex;
+  margin-top: 34px;
+  margin-bottom: 34px;
+  gap: 20px;
+}
+
+.real-checkbox {
+  z-index: -100;
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
+.custom-checkbox {
+  position: relative;
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  border: 1px solid #A4A4A4;
+  margin-right: 10px;
+}
+
+.custom-checkbox::before {
+  position: absolute;
+  content: "";
+  width: 13px;
+  height: 13px;
+  display: inline-block;
+  background-image: url("img/checkbox.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 0.2s ease-in;
+}
+
+.real-checkbox:checked + .custom-checkbox::before {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.loyalty {
+  max-width: 652px;
+}
+.loyalty__name {
+  color: #000;
+  font-size: 24px;
+  font-weight: 300;
+  margin-bottom: 22px;
+}
+.loyalty__description {
+  color: #000;
+  font-size: 24px;
+  font-weight: 300;
+  margin-bottom: 21px;
+}
+.loyalty__list {
+  color: #000;
+  font-size: 24px;
+  font-weight: 300;
+  list-style-image: url("img/marker.svg");
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-left: 26px;
+}
+.loyalty__list__paragraph {
+  padding-left: 23.08px;
 }/*# sourceMappingURL=style.css.map */
