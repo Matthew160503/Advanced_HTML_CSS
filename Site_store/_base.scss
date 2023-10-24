@@ -74,3 +74,14 @@ ul {
 button {
     transition: .2s;
 }
+
+.ttt {
+    height: 500px;
+}
+
+@media (max-width: 1140px) {
+    .center {
+        padding-left: calc(50% - 50vw + 16px);
+        padding-right: calc(50% - 50vw + 16px);
+    }
+}

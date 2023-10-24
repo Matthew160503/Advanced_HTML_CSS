@@ -31,7 +31,7 @@
 }
 
 #burger:checked~.nav {
-    right: -240px;
+    right: 0px;
 }
 
 
@@ -47,7 +47,7 @@
     box-sizing: content-box;
     position: absolute;
     top: 77px;
-    right: 0;
+    right: -240px;
     transition: right 0.3s;
     display: flex;
     flex-direction: column;
@@ -86,5 +86,12 @@
                 }
             }
         }
+    }
+}
+
+@media (max-width: 1140px) {
+    .header_block {
+        margin-left: 16px;
+        margin-right: 16px;
     }
 }

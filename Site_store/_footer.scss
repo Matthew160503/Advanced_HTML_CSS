@@ -28,7 +28,7 @@
 
 .advantages {
     @include flexJustify($gapSize: 3%);
-    height: 341px;
+    min-height: 341px;
     padding-bottom: 104px;
 
     &_adv {
@@ -53,13 +53,14 @@
             text-align: center;
             font-size: 13.972px;
             font-weight: 300;
+            width: 360px;
         }
     }
 }
 
 .block_subscribe {
     width: 100%;
-    height: 448px;
+    min-height: 448px;
     background: url('img/back.svg') no-repeat;
     position: relative;
     background-size: cover;
@@ -82,7 +83,6 @@
 }
 
 .about_employer {
-    height: 100%;
     width: 50%;
     @include flexJustify($alignItems: self-start);
     flex-direction: column;
@@ -90,6 +90,7 @@
 
 .image {
     padding-left: 122px;
+    padding-bottom: 30px;
 }
 
 .describe {
@@ -107,7 +108,6 @@
     @include flexJustify();
     flex-direction: column;
     width: 50%;
-    height: 448px;
 }
 
 .email_subtitle {
@@ -204,4 +204,53 @@
 
 .button_social:hover path {
     fill: #FFF;
+}
+
+
+@media (max-width: 1140px) {
+    .advantages {
+        padding-top: 48.5px;
+        flex-direction: column;
+        gap: 48.5px;
+        padding-bottom: 64px;
+        box-sizing: border-box;
+    }
+
+    .block_subscribe {
+        height: 614px;
+    }
+
+    .block_information {
+        flex-wrap: wrap;
+        align-content: flex-start;
+    }
+
+    .about_employer {
+        width: 100%;
+        padding-top: 64px;
+        padding-bottom: 48px;
+        height: 225px;
+        justify-content: flex-start;
+    }
+
+    .email {
+        width: 100%;
+    }
+
+    .about_employer {
+        align-items: center;
+    }
+
+    .image {
+        padding-left: 0;
+    }
+
+    .email_subtitle {
+        padding-bottom: 27px;
+    }
+
+    .social_block {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
 }

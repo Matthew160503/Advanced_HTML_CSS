@@ -152,3 +152,33 @@
 .main {
     margin-bottom: 128px;
 }
+
+@media (max-width: 1140px) {
+    .carousel {
+        height: 624px;
+    }
+
+    .d-block {
+        width: 455px;
+        height: 565px;
+        padding-top: 29px;
+    }
+
+    .box_about {
+        display: flex;
+        justify-content: center;
+
+        &_item {
+            margin-top: 0;
+            width: 768px;
+
+            &_title::before {
+                left: 351.5px
+            }
+
+            &_cust::before {
+                left: 63.5px;
+            }
+        }
+    }
+}

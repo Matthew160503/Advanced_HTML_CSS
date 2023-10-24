@@ -173,3 +173,23 @@
         }
     }
 }
+
+@media (max-width: 1140px) {
+    .filter-sort {
+        margin-top: 24px;
+        margin-bottom: 40px;
+    }
+
+    .sort {
+        justify-content: flex-end;
+    }
+
+    .exit {
+        display: none;
+    }
+
+    .scroll {
+        margin-top: 40.5px;
+        margin-bottom: 63.5px;
+    }
+}

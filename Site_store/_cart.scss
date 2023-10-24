@@ -229,3 +229,43 @@
     color: #FFF;
     border: none;
 }
+
+
+@media (max-width: 1140px) {
+    .carts_container {
+        width: 734px;
+        margin-bottom: 62px;
+    }
+
+    .cart_b {
+        margin-top: 59px;
+        flex-direction: column;
+
+        &_left {
+            max-width: 100%;
+            margin-bottom: 64px;
+
+            &_box {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        &_right {
+            max-width: 100%;
+            flex-direction: row;
+            justify-content: center;
+            gap: 15.5px;
+        }
+    }
+
+    .buttons_container {
+        gap: 48px;
+    }
+
+    .clother_exit {
+        left: 692px;
+    }
+}

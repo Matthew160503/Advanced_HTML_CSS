@@ -6,17 +6,17 @@
         height: 100%;
 
         &_left {
+            height: 100%;
             width: 50%;
-
-            &_img {
-                width: 100%;
-            }
+            background: url(img/top_photo.svg) no-repeat;
+            background-position: center;
+            background-size: cover;
         }
 
         &_right {
-            width: 50%;
-            @include flexJustify();
-            padding-left: 8%;
+            max-width: 50%;
+            @include flexJustify(flex-start);
+            padding-left: 64px;
             gap: 16px;
 
             &_preview {
@@ -151,7 +151,6 @@
         background-color: #FFF;
         width: 212px;
         height: 48px;
-        margin-bottom: 60px;
         color: $siteMainColor;
         border: 1px solid $siteMainColor;
     }
@@ -159,5 +158,35 @@
     &_button:hover {
         background-color: $siteMainColor;
         color: #FFF;
+    }
+}
+
+
+@media (max-width: 1140px) {
+    .top {
+        height: 368px;
+
+        &_box {
+            &_left {
+                background-size: contain;
+            }
+
+            &_right {
+                padding-left: 40px;
+
+                &_preview {
+                    font-size: 24px;
+
+                    &_type1 {
+                        font-size: 44px;
+                    }
+                }
+            }
+        }
+    }
+
+    .last_part {
+        margin-top: 32px;
+        margin-bottom: 65px;
     }
 }
