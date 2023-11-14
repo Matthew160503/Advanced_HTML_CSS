@@ -24,14 +24,15 @@
     fill: $siteMainColor;
 }
 
-#burger {
+.burger {
+    b: none;
     position: absolute;
-    left: -9999999999px;
     visibility: hidden;
+    left: -99999px;
 }
 
-#burger:checked~.nav {
-    right: 0px;
+.burger:checked~.nav {
+    right: 0;
 }
 
 
@@ -93,5 +94,43 @@
     .header_block {
         margin-left: 16px;
         margin-right: 16px;
+    }
+
+    .nav {
+        height: 550px;
+        padding-top: 16px;
+        padding-bottom: 10px;
+    
+        &_menu {
+            font-size: 12px;
+            padding-bottom: 16px;
+        }
+    
+        &_cat {
+            line-height: normal;
+    
+            &_block {
+                &_name {
+                    font-size: 12px;
+                    padding-bottom: 10px;
+                }
+    
+                &_list {
+                    padding-bottom: 10px;
+                    &_a {
+                        font-size: 12px;
+                        row-gap: 7px;
+                        padding-bottom: 10px;
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .out{
+        display: none;
     }
 }

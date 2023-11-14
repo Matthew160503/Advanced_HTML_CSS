@@ -43,3 +43,11 @@
         }
     }
 }
+
+@media (max-width: 768px){
+    .top_title_b{
+        justify-content: center;
+        flex-direction: column;
+        gap: 32px;
+    }
+}

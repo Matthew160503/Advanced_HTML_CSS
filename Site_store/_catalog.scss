@@ -193,3 +193,33 @@
         margin-bottom: 63.5px;
     }
 }
+
+@media (max-width: 768px) {
+    .filter-sort{
+        margin-bottom: 32px;
+        @include flexJustify();
+    }
+
+    .sort{
+        padding-left: 0px;
+    }
+
+    .sort_summary{
+        gap: 9px;
+    }
+
+    .sort_heading{
+        font-size: 12px;
+    }
+
+    .filter-sort-box{
+        width: 360px;
+    }
+    .filter_img{
+        width: 37.5px;
+        height: 25px;
+    }
+    .filter_heading{
+        display: none;
+    }
+}

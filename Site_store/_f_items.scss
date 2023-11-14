@@ -86,3 +86,9 @@
         grid-template-columns: repeat(2, 360px);
     }
 }
+
+@media (max-width: 768px) {
+    .f_items {
+        grid-template-columns: repeat(1, 360px);
+    }
+}

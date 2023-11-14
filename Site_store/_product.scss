@@ -182,3 +182,50 @@
         }
     }
 }
+
+@media (max-width: 768px) {
+    .d-block {
+        width: 374px;
+        height: 454px;
+        padding-top: 85px;
+    }
+
+    .main{
+        margin-bottom: 64px;
+    }
+
+    .box_about{
+        margin-bottom: 64px;
+
+        &_item{
+            width: 375px;
+
+            &_title::before{
+                left: 154.84px;
+            }
+
+            &_description{
+                padding-top: 32px;
+                width: 326px;
+            }
+
+            &_cust::before{
+                width: 175px;
+                left: 100px;
+                top: 385px;
+            }
+
+            &_cust{
+                padding-top: 85.5px;
+
+                &_box_subt{
+                    font-size: 10px;
+                }
+            }
+
+            &_adding{
+                padding-top: 25px;
+            }
+        }
+    }
+}

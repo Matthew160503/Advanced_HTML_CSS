@@ -214,6 +214,10 @@
         gap: 48.5px;
         padding-bottom: 64px;
         box-sizing: border-box;
+
+        &_adv{
+            width: 100%;
+        }
     }
 
     .block_subscribe {
@@ -252,5 +256,55 @@
     .social_block {
         margin-left: 16px;
         margin-right: 16px;
+    }
+}
+
+@media (max-width: 768px){
+    .block_subscribe{
+        height: 550px;
+    }
+
+    .email_subtitle{
+        padding-bottom: 22px;
+    }
+
+    .social{
+        height: 143px;
+
+        &_block{
+            margin: 0;
+            padding: 0;
+            flex-direction: column-reverse;
+
+            &_icons{
+                padding-top: 43px;
+            }
+
+            &_name{
+                padding-bottom: 9px;
+            }
+        }
+    }
+
+    .about_employer{
+        justify-content: space-between;
+        padding-bottom: 0px;
+    }
+
+    .describe{
+        font-size: 18px;
+        padding-bottom: 59px;
+    }
+
+    .email_subtitle{
+        width: 100%;
+
+        &_2{
+            font-size: 14px;
+        }
+    }
+
+    .image{
+        padding-bottom: 0px;
     }
 }
